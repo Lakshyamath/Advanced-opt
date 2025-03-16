@@ -40,3 +40,16 @@ $J(x_0 )=E(c_0 (x_0) + J_1^∗(x_1)) ⇒ V(x_0 )=J^∗(x_0)=inf_{\mu_0} {⁡J(x_
 Example:
 Modeling an inventory system as a stochastic control system where states represent inventory levels and control represent order quantities, and using dynamic programming to find the optimal ordering policy to minimize costs.
 Shortest path problems.
+
+Lecture-09 (07-02-2025): Convex program
+
+Recap:
+Convex optimization problem as minimizing a convex function f over a convex set C or maximizing a concave function f over a convex set C
+
+Lecture content
+Convexity of a function f is defined by Jensen's inequality as image of convex combination of any two points is less than equal to convex combination of the corresponding images of the points.
+
+In order to characterize further there is a need to recall separating hyperplane and supporting hypothesis alongwith separation lemma, and theorem of alternative.and orthogonal projection.
+
+Precap:
+In next lecture we will discuss optimality condition for a convex programming.
