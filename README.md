@@ -14,7 +14,7 @@ Lecture-06: Expected cost function:
 1. Expected cost function for stochastic control of a dynamical system ($x_{k+1}=f_k(x_k,u_k,\omega_k), k=0,1,...N-1$) with a feedback policy $\pi$ :
 \begin{align}
 J_{pi}(x_0) =E(c_N(x_N)+\sum_{k=0}^{N-1}c_k(x_k,\mu_k(x_k),\omega_k))
-end{align}
+\end{align}
 
 
 3. Dynamic programming for optimizing the expected cost function as sequential tail-subproblems from backward:
