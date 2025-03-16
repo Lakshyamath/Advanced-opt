@@ -9,12 +9,14 @@ Exa-04: A gambler's problem where betting decisions are made based on uncertain 
 Exa-05: Optimizing robot movement in a noisy environment.
 
 Lecture-wise description:
+
 Lecture-06: Expected cost function:
 1. Expected cost function for stochastic control of a dynamical system (x_{k+1}=f_k(x_k,u_k,\omega_k), k=0,1,...N-1, x(0)=x_0) with a feedback policy \pi :
+   $J_{\pi}$
 J_{pi}(x_0) =E(c_N(x_N)+\sum_{k=0}^{N-1}c_k(x_k,\mu_k(x_k),\omega_k))
 
 
-2. Dynamic programming for optimizing the expected cost function as sequential tail-subproblems from backward:
+3. Dynamic programming for optimizing the expected cost function as sequential tail-subproblems from backward:
 a. Initialization
 from backward (Nth tail subproblem):
 J_N (x_N )=c_N (x_N )⇒V(x_N )=J_N (x_N )=J_N^∗ (x_N )
