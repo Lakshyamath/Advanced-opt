@@ -1,11 +1,18 @@
 # Advanced-opt
 Advanced optimization or optimization of dynamic processes under uncertainty
+
 This is a eighth semester course on quantitative and data science at Birla Institute of Technology Mesra Ranchi. The course ia having three folds, first we discuss convex program (as a single-stage optimzation), then we discuss dynamic programming & stochastic control (as multi-stages optimization) and at the last we discuss metaheuristic optimization (as a derivative free optimization).
+
 In the dynamic programmic & stochastic control, we have discussed the following examples:
+
 Exa-01: Inventory control where a store must decide how much stock to order based on fluctuating customer demand, 
+
 Exa-02: Shortest path problems,
+
 Exa-03: Managing a portfolio of investments with uncertain market returns,
+
 Exa-04: A gambler's problem where betting decisions are made based on uncertain outcomes (win/loss probabilities), 
+
 Exa-05: Optimizing robot movement in a noisy environment.
 
 Lecture-wise description:
