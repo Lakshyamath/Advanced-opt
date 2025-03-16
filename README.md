@@ -10,10 +10,10 @@ Exa-05: Optimizing robot movement in a noisy environment.
 
 Lecture-wise description:
 
-Lecture-06: Expected cost function:
+Lecture-06 (05-02-2025): Expected cost function:
 1. Expected cost function for stochastic control of a dynamical system ($x_{k+1}=f_k(x_k,u_k,\omega_k), k=0,1,...N-1$) with a feedback policy $\pi$ :
 
-                        $J_{pi}(x_0) =E(c_N(x_N)+\sum_{k=0}^{N-1}c_k(x_k,\mu_k(x_k),\omega_k))$
+$J_{pi}(x_0) =E(c_N(x_N)+\sum_{k=0}^{N-1}c_k(x_k,\mu_k(x_k),\omega_k))$
 
 
 2. Dynamic programming for optimizing the expected cost function as sequential tail-subproblems from backward:
@@ -22,20 +22,21 @@ Step-a. Initialization from backward (Nth tail subproblem):
 $J_N (x_N )=c_N (x_N )⇒V(x_N )=J_N (x_N )=J_N^∗ (x_N )$
 
 b. N-1 tail subproblem:
-$J_(N-1) (x_(N-1) )=E(c_(N-1) (x_(N-1) )+J_N^∗ (x_N))⇒V(x_(N-1) )=J_(N-1)^∗ (x_(N-1) )=inf_{\mu{N-1}}⁡{J_{N-1}(x_{N-1})}$
+
+$J_{N-1}(x_{N-1})=E(c_{N-1}(x_{N-1})+J_N^∗(x_N)) ⇒ V(x_{N-1})=J_{N-1}^∗ (x_{N-1})=inf_{\mu{N-1}}⁡{J_{N-1}(x_{N-1})}$
+
 c. N-2 tail sub-problem:
-J_(N-2) (x_(N-2) )=E(c_(N-2) (x_(N-2) )+J_(N-1)^∗ (x_(N-1)
-))⇒V(x_(N-2) )=J_(N-2)^∗ (x_(N-2) )=inf_(μ_(N-2) )⁡〖J_(N-2) (x_(N-2) )〗
+
+$J_{N-2}(x_{N-2})=E(c_{N-2}(x_{N-2})+J_{N-1}^∗ (x_{N-1})) ⇒ V(x_{N-2})=J_{N-2}^∗ (x_{N-2})=inf_(\mu_{N-2})⁡ {J_{N-2} (x_{N-2})}$
+
 d. kth tail-subproblem:
-J_k (x_k )=E(c_k (x_k )+J_(k+1)^∗ (x_(k+1) ))⇒V(x_k )=J_k^∗
-(x_k )=inf_(μ_k )⁡〖J_k (x_k )〗
-.
-.
-.
+
+$J_k(x_k)=E(c_k(x_k) + J_{k+1}^∗(x_{k+})) ⇒ V(x_k)=J_k^∗(x_k)=inf_{\mu_k}⁡ {J_k(x_k)}$
+
 e. 0th tail-subproblem:
-J(x_0 )=E(c_0 (x_0 )+J_1^∗ (x_1 ))⇒V(x_0 )=J^∗ (x_0
-)=inf_(μ_0 )⁡J(x_0 )
+
+$J(x_0 )=E(c_0 (x_0) + J_1^∗(x_1)) ⇒ V(x_0 )=J^∗(x_0)=inf_{\mu_0} {⁡J(x_0)}$
 
 Example:
- Modeling an inventory system as a stochastic control system where states represent inventory levels and control represent order quantities, and using dynamic programming to find the optimal ordering policy to minimize costs.
+Modeling an inventory system as a stochastic control system where states represent inventory levels and control represent order quantities, and using dynamic programming to find the optimal ordering policy to minimize costs.
 Shortest path problems.
